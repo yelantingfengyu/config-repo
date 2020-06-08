@@ -1,0 +1,21 @@
+env:
+  dev
+server:
+   port: 8095
+   address: 0.0.0.0
+   maxPostSize: -1
+   maxHttpHeaderSize: 102400
+spring:
+   mvc:
+      static-path-pattern: /**
+   application:
+      name: sg-zhixiu-consumer-service
+   jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+   main:
+      allow-bean-definition-overriding: true
+eureka:
+   client:
+      service-url:
+         defaultZone: http://localhost:8764/eureka
