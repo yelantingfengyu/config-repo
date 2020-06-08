@@ -1,5 +1,4 @@
-env:
-   dev
+env: dev
 server:
    port: 8094
    address: 0.0.0.0
